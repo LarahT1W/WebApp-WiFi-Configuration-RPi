@@ -1,7 +1,7 @@
 # WebApp-WiFi-Configuration-RPi
 This is a NodeJS application to configure the Wi-Fi connection without ssh into the Raspbery Pi!
 
-A lot of steps have been forgotten here.(The work is done in 2016 Spring, which means successfully running the app will require the actual Hardware toolkits, e.g. Rapsberry Pi 2, the software build of PhotoBooth, Bluetooth USB, etc.)
+A lot of steps have been forgotten here.(The work is done in 2016 Spring with a group of engineers at UCSD ECE 191 course, which also means successfully running the app will require the actual Hardware toolkits, e.g. Rapsberry Pi 2, the software build of PhotoBooth, Bluetooth USB, etc.)
 
 But here is a demo on after successfully running the app: (Luckily!)
 
