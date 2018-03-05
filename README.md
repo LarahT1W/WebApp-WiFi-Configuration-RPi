@@ -7,7 +7,8 @@ But here is a demo on after successfully running the app: (Luckily!)
 
 ![Alt Text](https://github.com/LarahT1W/WebApp-WiFi-Configuration-RPi/blob/master/Done!!!.gif)
 
-Basically there are three steps:
+Basically there are four steps:
+
 1. Check if the WiFi connection is secure
 2. If ifconfig is down, then pull it up, and then start a WiFi hotspot using hostpad API
 3. Afterwards, the app will run a web server for you to configure the WiFi connection, by logging into 192.168.42.1:3000
