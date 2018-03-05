@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RpiWifiConfig">
+<head>
+    <title>No internet access</title>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="3">
+
+    <link rel="stylesheet" href="../font-awesome.css">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="../app.css">
+
+</head>
+
+<body ng-controller = "AppController"
+      ng-keyup      = "$event.keyCode == 27 ? change_selection(null) : ''">
+
+    <div class="establishing">
+        <div>Establishing internet connection...</div>
+        <a href="#" class="rotate" ng-click="rescan()" ng-class="{ 'active': scan_running }">
+            <i class="fa fa-refresh " ng-class="{ 'fa-spin': scan_running }"></i>
+        </a>
+    </div>
+
+    <!-- Scripts load last -->
+    <script src="/angular.min.js"></script>
+    <script src="/app.js"></script>
+
+</body>
+</html>
+
+
+<!--
+<body ng-controller = "AppController"
+      ng-keyup      = "$event.keyCode == 27 ? change_selection(null) : ''">
+
+<div class = "page-header established">
+    <i class = "fa fa-wifi"></i> Choose a Wifi App
+    <a href = "#" class="rotate" ng-click = "rescan()" ng-class = "{ 'active': scan_running }">
+        <i class = "fa fa-refresh" ng-class = "{ 'fa-spin': scan_running }"></i>
+    </a>
+</div>
+-->

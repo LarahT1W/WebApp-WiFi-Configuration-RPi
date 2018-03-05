@@ -1,0 +1,14 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+
+iface eth0 inet dhcp
+        wpa-ssid "PhotoboothMIFI"
+        wpa-psk "ca53f308"
+up iptables-restore < /etc/iptables.ipv4.nat
+allow-hotplug wlan0
+iface wlan0 inet static
+  address {{ ip_addr }}
+  netmask {{ netmask }}
